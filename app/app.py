@@ -112,10 +112,11 @@ class AppearanceResource(Resource):
             }
         }
         return response_data, 201
+    
 api.add_resource(EpisodeResource, '/episodes')
 api.add_resource(SingleEpisodeResource, '/episodes/<int:id>')
 api.add_resource(GuestResource, '/guests')
-api.add_resource(AppearanceResource, '/appearances')'
+api.add_resource(AppearanceResource, '/appearances')
 
 
 if __name__ == '__main__':
